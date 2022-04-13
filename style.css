@@ -1,27 +1,28 @@
 * {
-    font-family: sans-serif;
+	font-family: sans-serif;
 }
 
 body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
+
 .hidden {
-    display: none;
+	display: none;
 }
 
 .table {
-    font-size: 14px;
+	font-size: 14px;
 	border-collapse: collapse;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	border-radius: 6px;
 	border-collapse: collapse;
 	border-radius: 5px;
-	border-style: hidden; 
-	box-shadow: 0 0 0 1px gray; 
+	border-style: hidden;
+	box-shadow: 0 0 0 1px gray;
 }
 .table tr:last-child td:first-child {
 	border-bottom-left-radius: 5px;
@@ -47,7 +48,7 @@ body {
 }
 
 .table tr:hover {
-    cursor: pointer;
+	cursor: pointer;
 	background-color: rgb(255, 245, 205);
 }
 
@@ -60,60 +61,61 @@ body {
 }
 
 .posts-list-container {
-    position: absolute;
-    background-color: white;
-    width: 90%;
-    height: 100%;
-    padding-top: 30px;
+	position: absolute;
+	background-color: white;
+	padding: 10px;
+	height: 100%;
+	padding-top: 30px;
 }
 .posts-list-title {
-    display: inline-block;
-    font-size: 18px;
-    margin-right: 60px;
-    margin-left: 5px;
+	display: inline-block;
+	font-size: 18px;
+	margin-right: 60px;
+	margin-left: 5px;
 }
 .instructions {
-    font-size: 12px;
-    margin: 0;
+	font-size: 12px;
+	margin: 0;
 }
 
 button {
-    cursor: pointer;
-    background-color: #fffce1;
-    border: 1px solid gray;
-    border-radius: 5px;
-    padding: 4px 8px;
+	cursor: pointer;
+	background-color: #fffce1;
+	border: 1px solid gray;
+	border-radius: 5px;
+	padding: 4px 8px;
 }
 
 button:hover {
-    background-color: rgb(255, 245, 205);
+	background-color: rgb(255, 245, 205);
 }
 
 ul {
-    padding: 0;
-    margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 li {
-    list-style: none;
-    /* padding: 8px; */
-    border: 1px solid gray;
-    border-radius: 4px;
-    margin: 4px 0;
-    background-color: #fffce1;
+	list-style: none;
+	/* padding: 8px; */
+	border: 1px solid gray;
+	border-radius: 4px;
+	margin: 4px 0;
+	background-color: #fffce1;
+	max-width: 500px;
 }
 
 .post-title {
-    cursor: pointer;
-    font-size: 14px;
-    padding: 5px;
-    margin: 0;
+	cursor: pointer;
+	font-size: 14px;
+	padding: 5px;
+	margin: 0;
 }
 
 .post-content {
-    font-size: 14px;
-    border-top: 1px solid gray;
-    margin-top: 0;
-    margin: 0 5px;
-    padding: 8px;
+	font-size: 14px;
+	border-top: 1px solid gray;
+	margin-top: 0;
+	margin: 0 5px;
+	padding: 8px;
 }
