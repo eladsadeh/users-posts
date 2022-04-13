@@ -45,9 +45,11 @@ function displayUsers(users) {
 }
 
 function displayPosts(posts, user) {
-	if (document.querySelector('.posts-list-container')) {
-		document.querySelector('.posts-list-container').remove();
+	if (document.querySelector('.posts-background')) {
+		document.querySelector('.posts-background').remove();
 	}
+    const postsBG = document.createElement('div');
+    postsBG.classList.add('posts-background')
 	const postsCont = document.createElement('div');
 	postsCont.classList.add('posts-list-container');
     // Title for the post list
@@ -59,7 +61,7 @@ function displayPosts(posts, user) {
 	closeBtn.classList.add('posts-list-close');
 	closeBtn.innerText = 'Close';
 	closeBtn.addEventListener('click', () =>
-		document.querySelector('.posts-list-container').remove()
+		document.querySelector('.posts-background').remove()
 	);
     // Instructions how to open/close posts body
 	const inst = document.createElement('p');
@@ -89,7 +91,8 @@ function displayPosts(posts, user) {
 		postList.appendChild(postItem);
 	});
 	postsCont.appendChild(postList);
-	document.body.appendChild(postsCont);
+	postsBG.appendChild(postsCont);
+	document.body.appendChild(postsBG);
 }
 
 // Get users data
